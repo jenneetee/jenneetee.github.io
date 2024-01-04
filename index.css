@@ -1,44 +1,35 @@
 .revealable {
-  position: relative;
-  transform: translateY(150px);
-  opacity: 0;
-  transition: all 2s ease;
-}
-
-
-.row {
-  display: flex;
-  flex-wrap: wrap;
-  margin: 10;
-  padding: 0 4px;
-}
-
-/* Create four equal columns that sits next to each other */
-.column {
-  flex: 25%;
-  max-width: 25%;
-  padding: 0 4px;
-}
-
-.column img {
-  margin: 10;
-  vertical-align: middle;
-  max-width: 110%;
-}
-
-/* Responsive layout - makes a two column-layout instead of four columns */
-@media screen and (max-width: 800px) {
-  .column {
-    flex: 50%;
-    max-width: 50%;
+    position: relative;
+    transform: translateY(150px);
+    opacity: 0;
+    transition: all 2s ease;
   }
+  
+  
+.image-container:after {
+    content: "";
+    display: table;
+    clear: both;
 }
 
-/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 600px) {
-  .column {
-    flex: 100%;
-    max-width: 100%;
-  }
+  /* Style each image with a float to align them horizontally */
+.image-container img {
+    float: left;
+    margin: 10px; /* Add some margin for spacing */
+    width: 440px; /* Adjust the width as needed */
+    height: auto; /* Maintain the aspect ratio */
 }
 
+.logo-container:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+  /* Style each image with a float to align them horizontally */
+.logo-container img {
+    float: left;
+    margin: 10px; /* Add some margin for spacing */
+    width: 400px; /* Adjust the width as needed */
+    height: auto; /* Maintain the aspect ratio */
+}
