@@ -24,7 +24,7 @@
   margin-top: 8px;
   margin: 5;
   vertical-align: middle;
-  width: 150%;
+  max-width: 150%;
 }
 
 /* Responsive layout - makes a two column-layout instead of four columns */
