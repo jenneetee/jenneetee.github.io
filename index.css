@@ -1,35 +1,38 @@
-.revealable {
-    position: relative;
-    transform: translateY(150px);
-    opacity: 0;
-    transition: all 2s ease;
-  }
-  
-  
 .image-container:after {
-    content: "";
-    display: table;
-    clear: both;
+  content: "";
+  display: table;
+  clear: both;
 }
 
-  /* Style each image with a float to align them horizontally */
+/* Style each image with a float to align them horizontally */
 .image-container img {
-    float: left;
-    margin: 10px; /* Add some margin for spacing */
-    width: 440px; /* Adjust the width as needed */
-    height: auto; /* Maintain the aspect ratio */
+  float: left;
+  margin: 10px; /* Add some margin for spacing */
+  width: 440px; /* Adjust the width as needed */
+  height: auto; /* Maintain the aspect ratio */
 }
 
 .logo-container:after {
-    content: "";
-    display: table;
-    clear: both;
+  content: "";
+  display: table;
+  clear: both;
 }
 
-  /* Style each image with a float to align them horizontally */
+/* Style each image with a float to align them horizontally */
 .logo-container img {
-    float: left;
-    margin: 10px; /* Add some margin for spacing */
-    width: 400px; /* Adjust the width as needed */
-    height: auto; /* Maintain the aspect ratio */
+  float: left;
+  margin: 10px; /* Add some margin for spacing */
+  width: 400px; /* Adjust the width as needed */
+  height: auto; /* Maintain the aspect ratio */
+}
+
+.banner-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: auto;
+  margin: 30px;
+}
+.banner-container img{
+  border-radius: 30px;
 }
