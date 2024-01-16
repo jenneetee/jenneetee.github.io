@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>3D First-Person Shooter Game</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inconsolata">
+<link rel="stylesheet" href="index.css">
+<link rel="icon" href="img/cup-of-drink.png">
+<style>
+body, html {
+  height: 100%;
+  font-family: "Inconsolata", sans-serif;
+  background-color: #F7F5F2;
+}
+
+.bgimg {
+  background-position: center;
+  background-size: cover;
+  background-image: url("gifs/coffee.gif");
+  min-height: 75%;
+}
+
+.menu {
+  display: none;
+}
+</style>
+</head>
+<body>
+
+<!-- Links (sit on top) -->
+<div class="w3-top">
+  <div class="w3-row w3-padding w3-black">
+    <div class="w3-col s3">
+      <a href="index.html" class="w3-button w3-block w3-black">HOME</a>
+    </div>
+    <div class="w3-col s3">
+      <a href="index.html#about" class="w3-button w3-block w3-black">ABOUT</a>
+    </div>
+    <div class="w3-col s3">
+      <a href="index.html#projects" class="w3-button w3-block w3-black">PROJECTS</a>
+    </div>
+    <div class="w3-col s3">
+      <a href="index.html#skills" class="w3-button w3-block w3-black">SKILLS</a>
+    </div>
+  </div>
+</div>
+
+
+<!--Beginning of page-->
+
+<div class="w3-container">
+  <div class="w3-content" style="max-width:700px">
+    <h2 class="w3-center w3-padding-64"><span class="w3-tag w3-wide">3D FIRST-PERSON SHOOTER</span></h2>
+    <figure class="banner-container">
+      <img src="img/gameplay-banner.png" alt="Gameplay screenshot of my game" />
+    </figure>
+    <a href="https://github.com/jenneetee/3D-First-Person-Shooter-Game"target="_blank">Github Repository</a>
+    <h3><b>Project Summary</b></h3>
+    <h6><i>Program/Skills Used: Unity 3D, Visual Studio, C#</i></h6>
+    <p>As part of my Game Development I class at GSU, I created a 3D shooter game. The game features two types of weapons - a gun 
+      and a missile launcher - which can be switched by pressing the "Q" key. The game also includes <b>enemy NPCs that are controlled by 
+      AI and can chase the player, a health/bullet system, and a win/lose scenario.</b> The game was developed using Unity 3D with assets 
+      from the Unity Store, and the scripts were coded in C#.</p>
+    <h3><b>Lessons Learned</b></h3>
+    <p>As a beginner in C# coding and game development in Unity 3D, there are a few issues in my game that need fixing. For instance, collectible 
+      bullets cannot be added to the inventory, and the number of bullets goes into negative after the player runs out of bullets. However, this 
+      experience has taught me several new skills related to game development. I have learned to code in C#, which forms the basis of most functionalities 
+      in the games. Moreover, I have learned the proper practices of saving assets in Unity 3D. Unfortunately, I lost my progress in the final project while 
+      importing assets, but I have learned from my mistake.</p>
+</div>
+
+  <!-- End page content -->
+</div>
+
+<!-- Footer -->
+<footer class="w3-center w3-light-grey w3-padding-48 w3-large">
+  <p class="w3-text-grey">
+    Atlanta, GA
+    <br>
+    470-776-0683
+    <br>
+    p.phan.jennifer@gmail.com
+  </p>
+  <p> <a href="https://www.linkedin.com/in/jennifer-phan-8a73131b2/"target="_blank"><img src="./img/linkedin.png" style="width:40px;height:40px;"></a>
+    <a href="https://github.com/jenneetee"target="_blank"><img src="./img/github.png" style="width:40px;height:40px;"></a>
+  </p>
+</footer>
+
+<script>
+// Tabbed Menu
+function openMenu(evt, menuName) {
+  var i, x, tablinks;
+  x = document.getElementsByClassName("menu");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < x.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" w3-dark-grey", "");
+  }
+  document.getElementById(menuName).style.display = "block";
+  evt.currentTarget.firstElementChild.className += " w3-dark-grey";
+}
+document.getElementById("myLink").click();
+</script>
+
+</body>
+</html>
