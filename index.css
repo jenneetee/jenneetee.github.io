@@ -26,6 +26,23 @@
   height: auto; /* Maintain the aspect ratio */
 }
 
+
+.art-container:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Style each image with a float to align them horizontally */
+.art-container img {
+  float: left;
+  margin: 5px; /* Add some margin for spacing */
+  width: 400px; /* Adjust the width as needed */
+  height: auto; /* Maintain the aspect ratio */
+  object-fit: contain;
+  pointer-events: none; /* Make the image non-clickable */
+}
+
 .banner-container {
   display: flex;
   align-items: center;
