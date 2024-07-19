@@ -53,3 +53,13 @@
 .banner-container img{
   border-radius: 30px;
 }
+
+.buttons-links {
+  margin: 10px;
+  border-color: #574232;
+}
+.buttons-links:hover{
+  background-color: #574232;
+  color: white;
+  cursor: pointer;
+}
