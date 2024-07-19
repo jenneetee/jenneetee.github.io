@@ -52,11 +52,15 @@
 }
 .banner-container img{
   border-radius: 30px;
+  max-width: 100%;
+  height: auto;
 }
 
 .buttons-links {
-  margin: 10px;
+  margin-bottom: 10px;
+  margin-top: 10px;
   border-color: #574232;
+  transition: 0.4s;
 }
 .buttons-links:hover{
   background-color: #574232;
