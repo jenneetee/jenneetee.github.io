@@ -12,6 +12,32 @@
   height: auto; /* Maintain the aspect ratio */
 }
 
+/* To zoom into image*/
+.click-zoom input[type=checkbox] {
+  display: none;
+}
+
+.click-zoom img {
+  margin: 30px;
+  max-width: 100%;
+  box-shadow: 0px 0px 19px 7px rgba(56,32,20,0.16);
+  height: auto; /* Maintain the aspect ratio */
+  transition: transform 0.25s ease;
+  cursor: zoom-in;
+}
+
+.click-zoom input[type=checkbox]:checked~img {
+  transform: scale(2);
+  cursor: zoom-out;
+}
+
+
+.examples-container img{
+  margin: 30px;
+  max-width:100%;
+  height: auto; /* Maintain the aspect ratio */
+}
+
 .logo-container:after {
   content: "";
   display: table;
